@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="HelpFunctions.js" ></script>
+</head>
+<body>
+    <script>writeHeader();</script>
+    
+    <p class="sectionHead">
+        More information</p>
+    
+    <h1>Frequently asked questions and Troubleshooting</h1>
+    
+    <h4>I moved a map element (Tools, Results, etc.) off 
+        the screen. How can I get it back?</h4>
+    <p>If you accidentally move an element outside the visible
+        window, you may move it back by using the browser's scrollbars
+        to scroll the window until the element is visible, then
+        drag it back to the main area of the window.</p>
+        
+    <h4>In Results from an identify or query, when I check a feature
+        to highlight it on the map, the feature does not get highlighted.</h4>
+    <p>The administrator of the site may have disabled this ability.
+        If the map uses ArcIMS software and returning geometry is
+        disabled, then the website won't highlight features.</p>
+        
+    <h4>Error messages</h4>
+    
+    <h5>An unhandled
+        exception has occurred: There was an error in the callback.</h5>
+    <p>The web application may have timed out. Try holding the Control
+        key (Ctrl) down and clicking the browser's Refresh button to
+        restart the web application. If the error continues, please
+        report the problem to the website administrator.</p>
+        
+    <h5>Application Error - Page_Error - serverObject</h5>
+    <p>In this case, the normal web page does not appear, just this error
+        message. A number of problems may be causing this error. The
+        server may have too many users. In this case, wait a few
+        minutes and try the website again. Or the server may be down.
+        If the problem persists, contact the website administrator.</p>
+        
+    <h5>Application Error - Page_Error - Error HRESULT E_FAIL has 
+        been returned from a call to a COM component.</h5>
+    <p>In this case, the normal web page does not appear, just this error 
+        message. The cause may be that one or more of the GIS services
+        that the website uses is not running. Ask the website
+        administrator to check that the services used by the website
+        are running and accessible to the website.</p>
+    
+    <h4></h4>
+
+</body>
+</html>

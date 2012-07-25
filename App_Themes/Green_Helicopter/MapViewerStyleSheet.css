@@ -1,0 +1,115 @@
+﻿.MapViewer_TitleBarStyle
+{
+    background-color: #004080; 
+    font-weight: bold; 
+    font-size: xx-large; 
+    vertical-align: middle; 
+    color: white; 
+    font-family: Arial, Verdana, Sans-Serif;
+}
+
+.MapViewer_TitleBannerStyle
+{
+	display: block; 
+	background-color: #b3d599;
+	background-image: url(images/TitleBanner.jpg);
+	background-repeat: no-repeat;
+	font-weight: bold; 
+	font-size: 	small; 
+	font-family: Verdana, Sans-Serif, Arial;
+	color: #666666;
+}
+
+.MapViewer_TaskbarStyle
+{
+    background-color: #4B5731; 
+    font-weight: bold; 
+    font-size: 8pt; 
+    color: white; 
+    font-family: Verdana, Sans-Serif, Arial;
+	background-image: url(images/green1-gradient-30x1.gif);
+	background-repeat: repeat-x;
+}
+
+.MapViewer_SmallTitleBarStyle
+{
+    background-color: Navy; 
+    font-weight: bold; 
+    font-size: small; 
+    color: white; 
+    font-family: Arial, Verdana, Sans-Serif;
+}
+
+.MapViewer_PanelHeaderStyle
+{
+    background-color: Navy; 
+    color:White; 
+    font-family: Arial, Verdana, Sans-Serif; 
+    font-size: small;
+    font-weight: bold;
+    width: 100%;
+}
+
+.MapViewer_PanelContentsStyle
+{
+    background-color: white; 
+    color: black; 
+    font-family: Arial, Verdana, Sans-Serif;
+    font-size: small;
+    width: 100%; 
+    display: block;
+}
+
+.MapViewer_WindowTitleBarStyle 
+{
+    background-color: #4B5731; 
+    font-weight: bold; 
+    font-size: 8pt; 
+    color: white; 
+    font-family: Verdana, Sans-Serif, Arial;
+	background-image: url(images/green1-gradient-24x1.gif);
+	background-repeat: repeat-x;
+}
+
+.MapViewer_WindowStatusBarStyle
+{
+    font-family:Arial, Verdana, Sans-Serif;
+    font-size:x-small; 
+    color: white;
+}
+
+.MapViewer_WindowContentsStyle
+{
+    font-family:Arial, Verdana, Sans-Serif;	
+    font-size:x-small; 
+    background-color: White; 
+    color: Navy; 
+    border: 1px solid black; 
+    overflow: hidden;
+}
+
+.MapViewer_WindowBodyStyle
+{
+    background-color: #00008b; 
+    color:White; 
+    font-family:Arial, Verdana, Sans-Serif; 
+    font-size:x-small;
+    border: solid thin Black;
+}
+
+.MapViewer_ResizeHandleStyle 
+{
+    width:250px; 
+    height:8px; 
+    background-image:url(images/blank.gif); 
+    background-color: White;
+	-moz-opacity: 0.1; 
+	filter: alpha(opacity=10); cursor:sn-resize;
+	opacity: 0.1; 
+}
+        
+.MapViewer_CollapsePanel 
+{
+    background-color:white; 
+    cursor:n-resize;
+}

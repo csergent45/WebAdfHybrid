@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="HelpFunctions.js" ></script>
+    
+    <style type="text/css">
+        #contents {
+            background-color: #ddddff;
+            border:2px;
+            border-style:solid;
+            border-color:#ccccff;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>writeHeader();</script>
+    
+    <p class="sectionHead">Modifying data</p>
+    
+    <h1>Editing data</h1>
+    
+    <p>If your Web application has this feature enabled, the Editor task 
+        allows you to edit data on the server. </p>
+    
+    <table id="contents"><tr><td>
+    <p>In this section:</p>
+    <ul>
+        <li><a href="#StartStopEditing">Start and stop editing</a></li>
+        <li><a href="#SetEditLayer">Setting the edit layer</a></li>
+        <li><a href="#CreateFeature">Creating a new feature</a></li>
+        <li><a href="#Selecting">Selecting features</a></li>
+        <li><a href="#Modifying">Modifying and deleting features</a></li>
+        <li><a href="#Settings">Settings options</a></li>
+    </ul>
+    </td></tr></table>
+    
+    <h4 style="border-bottom: steelblue thin solid;"><a name="StartStopEditing"></a>
+        Start and stop editing</h4>
+    
+    <ul>
+        <li>If available, open the Editor task by clicking its name in the <a href="GettingStarted.htm">
+            menu area</a> (the name of the task may vary). 
+            The Editor task window will open. If the Editor link
+            is not visible on the page, then this Web application
+            does not allow editing.</li>
+            
+        <li>In the Editor task window, a menu may display for selecting a version to edit. If
+            so, choose a version from
+            the drop-down list. Then click <b>Start Editing</b>.
+            This closes the Editor task window and opens the
+            Editor tools window.</li>
+            
+        <li>If the <strong>Save</strong> button is displayed in the Editor task window, 
+            you must use the Save button to
+            save your edits. If you make changes and then close
+            the Editor task window, you will be asked whether to discard
+            your changes: click OK to discard changes, or click Cancel
+            to return to the Editor task window. If you make changes and simply
+            close the browser without saving, your edits will
+            not be saved. (If the Save button is not displayed,
+            then your edits are saved immediately, and you do not need
+            to save them explicitly.)</li>
+            
+    </ul>
+    
+    <h4><a name="SetEditLayer"></a>Setting the edit layer</h4>
+    
+    <ul>
+        <li>Only one layer may be edited at a time. To choose
+            the layer to edit, select the layer from the
+            drop-down list at the top of the Editor tools window.
+            <!-- If switch edit layers after edits, what happens
+                to those edits? --></li>
+        <li>Optionally, modify the settings for editing, such
+            as snapping and selection, with the <b>Settings</b>
+            window. Open Settings from the link at the bottom
+            of the Editor tools window. For more information,
+            see the section below on 
+            <a href="#Settings">Settings options</a>.</li>
+    </ul>
+    
+    <h4><a name="EditButtons"></a>Edit functions</h4>
+    
+    <p>Edit buttons just below the edit layer name enable
+        actions common to all edit operations:</p>
+        
+        <table cellpadding="5" cellspacing="0" class="tableMain">
+            <tr class="tableHeader">
+                <th colspan="2">Tool</th>
+                <th>Description</th>
+            </tr>
+            <tr class="oddRow">
+                <th>Select Feature</th>
+                <td>
+                    <img src="images/select-feature-editing.gif" /></td>
+                <td>Click on this tool,
+                    then click or click and drag a rectangle on
+                    the map. Features clicked on, or within the 
+                    drawn rectangle, will be selected.
+                    Selection is shown with a
+                    cyan (blue-green) color (see 
+                    <a href="#Settings">Settings</a> to change
+                    selection color).
+                    Features must be selected before they can be modified
+                    or deleted.</td>
+            </tr>
+            <tr class="evenRow">
+                <th>Clear Feature(s)</th>
+                <td>
+                    <img src="images/clear-selected-feature.gif" /></td>
+                <td>Clears any selected
+                    features so that no features are selected.</td>
+            </tr>
+            <tr class="oddRow">
+                <th>Show Vertices</th>
+                <td>
+                    <img src="images/ShowVertices.gif" /></td>
+                <td>If feature(s) are selected,
+                    displays their vertices in red. Vertices are the
+                    points that define the shape of a feature.</td>
+            </tr>
+            <tr class="evenRow">
+                <th>Undo</th>
+                <td>
+                    <img src="images/undo.gif" /></td>
+                <td>If available, this button reverses the last editing operation.
+                    If pressed again, works its way backward to 
+                    undo actions done. Once you do a Save of your work,
+                    you cannot undo operations done before the save.
+                    </td>
+            </tr>
+            <tr class="oddRow">
+                <th>Redo</th>
+                <td>
+                    <img src="images/redo.gif" /></td>
+                <td>If available, this button reinstates the action 
+                    that had been reversed with the Undo button.</td>
+            </tr>
+            <tr class="evenRow">
+                <th>Save Edit(s)</th>
+                <td>
+                    <img src="images/save-editing.gif" /></td>
+                <td>If available, this button saves all changes to the
+                    data in the edit session. You must do a Save
+                    before exiting the browser in order to preserve
+                    your changes to the data. If this button is not
+                    present, then any edits are saved immediately.</td>
+            </tr>
+            <tr class="oddRow">
+                <th>Enter XY value(s)</th>
+                <td>
+                    <img src="images/EnterXYValues.gif" /></td>
+                <td>Creates a new feature
+                    by entering coordinates of vertices in the
+                    feature. Clicking this button opens a new window
+                    to input the coordinates. For lines and polygons,
+                    you can enter multiple vertices by clicking the <strong>Continue
+                        Adding</strong> button. When you enter the last vertex, click <strong>Add Final</strong>
+                    to finish the feature.</td>
+            </tr>
+        </table>
+    
+    <h4><a name="CreateFeature"></a>Creating a new feature</h4>
+    
+    <ol>
+        <li>In the section of the Editor tools window labeled
+            <b>Create &lt;layer name&gt;</b>,
+            click a button for the type of feature to create.
+            One or more buttons will be available.
+            If the layer has multiple classes defined for the map display,
+            a button will display for each class. You can hover over the
+            button, and the name of the class type will pop up next
+            to the button. 
+            After you click a button, it will have a pressed appearance.</li>
+            
+        <li>Click on the map to create the feature. For lines,
+            click once at each vertex (point), and double-click at the
+            last vertex. For polygons, click at each vertex, then
+            double-click to finish. Do not click back on the original
+            vertex, as the polygon will automatically close. Press and hold the "s" key to
+        temporarily show a red marker at the location to which the cursor will snap if
+        you click to add a vertex. It also shows the layer to which snapping will occur.</li>
+        <li>You can also enable snapping options while adding vertices: see 
+        <a href="#Settings">Settings options</a> below.</li>
+        <li>After finishing the feature, it will be highlighted
+            on the map, and the attribute fields will display in
+            the Editor window. Attributes may be entered for the
+            feature and the feature's shape may be edited at this point.
+            </li>
+            
+        <li>You can continue adding features by clicking on the
+            map. Remember to save your edits if necessary.</li>
+    </ol>
+    
+    <h4><a name="Selecting"></a>Selecting features</h4>
+    
+    <p>Before modifying or deleting a feature, it must be
+            selected.</p>
+    <ol>
+        <li>Click the Select tool.</li>
+        <li>With the select tool active, click on the map to
+            select the feature. You can also draw a rectangle
+            to select features within the rectangle.</li>
+        <li>After a few moments, the selected features 
+            are highlighted. These features can
+            then be modified or deleted.</li>
+    </ol>
+    
+    <h4><a name="Modifying"></a>Modifying and deleting features</h4>
+    
+    <p>After features are selected, they can be modified using
+        the editing tools. The set of tools displayed differs for
+        point, line and polygon layers.</p>
+        
+    <p><strong>Attributes</strong>
+        can also be modified in
+        the Editor task window. If an attribute is entered that
+        does not match the data type, a message will display and
+        the value will be erased. For example, if an attribute field
+        is a numeric type and a value of "Test" is entered,
+        the value will not be allowed.</p>
+        
+        <table cellpadding="5" cellspacing="0" class="tableMain">
+            <tr class="tableHeader">
+                <th colspan="2">Tool</th>
+                <th>Action</th>
+            </tr>
+            <tr class="evenRow">
+                <th>Move feature</th>
+                <td>
+                    <img src="images/move.gif" /></td>
+                <td>Moves the feature to a new location.
+                    Click first on some point in the feature.
+                    As you move the cursor to the new location,
+                    a line follows the cursor to indicate the move.
+                    Click the second time on the new location.
+                    The feature is moved, with the point on
+                    the feature click first moved to
+                    the location clicked second.</td>
+            </tr>
+            <tr class="oddRow">
+                <th>Copy feature</th>
+                <td><img src="images/copy.gif" /></td>
+                <td>To copy a selected feature, click once
+                    on the feature, then move the cursor
+                    to the new location and click again.
+                    The feature is copied, with the point on
+                    the feature clicked first
+                    located at the point clicked second.</td>
+            </tr>
+            <tr class="evenRow">
+                <th>Split feature</th>
+                <td>
+                    <img src="images/split-line.gif" /><br />
+                    <img src="images/split-polygon.gif" /></td>
+                <td>Splits a selected line or polygon feature into two features.
+                    For a line, click the tool, then click once
+                    at the location to split the line. For a polygon,
+                    click to draw a line to define the split. At the
+                    last point in the line for splitting the polygon, double-click
+                    on the map to finish and split the polygon. Each
+                    feature takes the attributes of the
+                    existing feature.</td>
+            </tr>
+            <tr class="oddRow">
+                <th>Merge features</th>
+                <td>
+                    <img src="images/merge-line.gif" /><br />
+                    <img src="images/merge-polygon.gif" /></td>
+                <td>Merges two or more selected lines or polygons 
+                    into a single feature.
+                    If polygons overlap, the boundary between them
+                    is dissolved so that they form a single polygon.
+                    Note that this does not snap vertices.
+                    The merged feature takes the attributes of the
+                    first feature selected.
+                    </td>
+            </tr>
+            <tr class="evenRow">
+                <th>Delete feature</th>
+                <td>
+                    <img src="images/delete.gif" /></td>
+                <td>Deletes the entire point, line or polygon
+                    feature(s) that are selected. No warning
+                    message is shown, but if the Undo button is 
+                    available, you can use it to undo the delete.</td>
+            </tr>
+            <tr class="oddRow">
+                <th>Add vertex</th>
+                <td>
+                    <img src="images/insert-vertex.gif" /></td>
+                <td>For a line or polygon, adds a vertex 
+                    along the edge where you click.</td>
+            </tr>
+            <tr class="evenRow">
+                <th>Delete vertex</th>
+                <td>
+                    <img src="images/delete-vertex.gif" /></td>
+                <td>For a line or polygon, deletes the vertex
+                    clicked on. You cannot delete the last two
+                    vertices of a line, or the last three
+                    vertices of a polygon.</td>
+            </tr>
+            <tr class="oddRow">
+                <th>Move vertex</th>
+                <td>
+                    <img src="images/move-vertex.gif" /></td>
+                <td>For a line or polygon, moves a vertex. First
+                    click on the vertex to move. After clicking, 
+                    a line follows the cursor, indicating the move
+                    action. Click on the new location for the vertex.</td>
+            </tr>
+        </table>
+    
+    <h4><a name="Settings"></a>Settings options</h4>
+    
+    <p>Settings options modify how selection and snapping occur.
+        Click the <b>Settings</b> link in the lower right of the 
+        Editor tools window to open the Settings options. Click the down arrows within the Settings window to display
+        sections of the options.
+        The administrator of the website may limit the 
+        options that you can set.</p>
+    <p>
+    <p style="font-weight:bold">Snapping settings</p>
+    
+    <p>When you draw a line or polygon, you may want vertices
+        (points) to fall exactly along other existing
+        features. Snapping forces a click to take the precise coordinate
+        of a feature, if the feature falls within the 
+        <b>Snapping Tolerance</b> of the click.
+        <br />
+        <br />
+        <strong>Snap tips</strong> are automatically available when editing. When adding
+        or moving vertices, <strong>press and hold the 's' key</strong> to show a marker
+        at the location to which the cursor will be snapped:
+        <br />
+        <img alt="Snap tip illustration" src="images/snap_tip.gif" /><br />
+        The cursor does not actually snap to this location while drawing a line or polygon.
+        But once you
+        finish adding the feature, the snapped locations will be the ones used and displayed.</p>
+        
+        <ul>
+        <li><b>Snapping Rules</b> determine which parts of features within
+                a layer can be snapped to. For each layer, you can snap to
+                specific locations within features.
+            <ul>
+                <li>Vertex: mouse click location will be snapped to the nearest vertex
+                    in a feature of the layer, if within the snapping tolerance.</li>
+                <li>Edge: mouse click location will be snapped to the nearest
+                    line or polygon of a feature. Snapped location does not have
+                    to fall on a vertex.</li>
+                <li>End: mouse click location will be snapped to an end point
+                    of a line or polygon.</li>
+            </ul>
+    
+        </li>
+    
+        <li><b>Snapping Tolerance</b>: the location clicked with the mouse
+        will be snapped only if it is within this distance of a feature.
+        The smaller the snapping tolerance, the closer you must click
+        to a feature in order to snap to it.</li>
+            <li><strong>Show snap circle</strong>: when adding or moving vertices, displays a circle halo around the cursor as
+                you move the mouse. This indicates the snapping tolerance. If a feature in a layer
+                with snapping enabled is within this circle, depending on the snapping rules for
+                end, vertex or edge. Be aware that enabling this option uses CPU time on your computer
+                as you move the mouse.<br />
+            <img alt="Snapping circle" src="images/snap_halo.gif" /></li>
+        </ul>
+    
+    <p style="font-weight:bold">Select Features settings</p>
+    
+    <ul>
+        <li><b>Tolerance:</b> When selecting features, features within
+            this distance of the mouse click will be selected. This
+            allows easier selection of point and line features.</li>
+            
+        <li><b>Limit selection to:</b> No more than this number of
+            features can be selected at one time. This limits the
+            potential load on the server and prevents inadvertently
+            selecting large numbers of features.</li>
+            
+        <li><b>Selection Mode:</b> When using the Select Feature tool,
+            this setting determines how the selection affects any features
+            previously selected in the layer.
+            <ul>
+                <li>Create new selection: any features previously selected
+                are unselected, and a new set is selected based on the
+                area drawn with the Select Feature tool.</li>
+                <li>Add to current selection: newly selected features are
+                added to the set of features previously selected.</li>
+                <li>Remove from current selection: features found when using
+                the Select Feature tool are removed from the set previously
+                selected. Remaining features, if any, are still selected.</li>
+                <li>Toggle feature selection state: features intersecting the
+                area drawn with the Select Features too that were not previously
+                selected will be selected, while features previously selected
+                will be un-selected. Features not intersecting the area drawn
+                will remain selected.
+                </li>
+            </ul>
+            </li>
+            
+        <li><b>Selection Color:</b> Selected features are shown
+            with this color. To change the selection color, click the
+            drop-down arrow, and choose a color from the palette.
+        </li>
+        
+        <li><b>Show highlight:</b>If checked, displays the feature whose
+            attributes are currently being editing with a separate highlight
+            color. If this option is checked, the <b>Highlight Color</b>
+            is displayed and may be set by clicking the drop-down arrow
+            next to the color sample box,
+            which displays the color palette for choosing a new color.</li>
+    </ul>    
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><VisualWebDeveloper>
+
+    <!-- 
+	Visual Studio global web project settings.
+    -->
+
+
+	<Globals>
+		
+		
+		
+		
+		
+		
+		
+		<UserProperties ESRIImportCache="ESRI.ArcGIS.ADF.Web|ESRI.ArcGIS.ADF.Web.DataSources|ESRI.ArcGIS.ADF.Web.DataSources.ArcGISServer|ESRI.ArcGIS.ADF.Web.DataSources.Exceptions|ESRI.ArcGIS.ADF.Web.DataSources.Graphics|ESRI.ArcGIS.ADF.Web.DataSources.Graphics.Design|ESRI.ArcGIS.ADF.Web.Display|ESRI.ArcGIS.ADF.Web.Display.Drawing|ESRI.ArcGIS.ADF.Web.Display.Graphics|ESRI.ArcGIS.ADF.Web.Display.Renderer|ESRI.ArcGIS.ADF.Web.Display.Swatch|ESRI.ArcGIS.ADF.Web.Display.Symbol|ESRI.ArcGIS.ADF.Web.Geocode|ESRI.ArcGIS.ADF.Web.Geometry|ESRI.ArcGIS.ADF.Web.Properties|ESRI.ArcGIS.ADF.Web.SpatialReference|ESRI.ArcGIS.ADF.Web.UI.WebControls|ESRI.ArcGIS.ADF.Web.UI.WebControls.Common.JsonConverters|ESRI.ArcGIS.ADF.Web.UI.WebControls.Tools|ESRI.ArcGIS.Carto|ESRI.ArcGIS.GISClient|ESRI.ArcGIS.REST|ESRI.ArcGIS.REST.Catalog|ESRI.ArcGIS.REST.GeocodeServer|ESRI.ArcGIS.REST.GeoDataServer|ESRI.ArcGIS.REST.GeometryServer|ESRI.ArcGIS.REST.GPServer|ESRI.ArcGIS.REST.MapServer|ESRI.ArcGIS.REST.MapServer.KML|ESRI.ArcGIS.REST.NAServer|ESRI.ArcGIS.REST.Security|ESRI.ArcGIS.Server"/></Globals></VisualWebDeveloper>

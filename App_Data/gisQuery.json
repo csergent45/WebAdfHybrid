@@ -1,0 +1,9 @@
+{
+  "app query": {
+    "Application": "Crime Analysis",
+    "RandParam": "369",
+    "UserIp": "192.100.0.0",
+    "Feature_Type": "Point",
+    "featureQuery": "Address"
+  }
+}

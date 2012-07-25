@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="HelpFunctions.js" ></script>
+</head>
+<body>
+    <script type="text/javascript">writeHeader();</script>
+    
+    <p class="sectionHead">Find</p>
+    
+    <h1>Identify features on the map</h1>
+    
+    <p>If you want to know about a feature on the map, you
+        can get more information about it using the Identify tool 
+        <img alt="Identify tool" src="../images/identify.png" 
+        style="vertical-align: middle" />.</p>
+        
+    <h4>To identify a feature</h4>
+    
+    <ol>
+        <li>In the <a href="ToolReference.htm">Toolbar</a>,
+            click the Identify button
+            <img src="../images/identify.png" 
+            alt="Identify tool" style="vertical-align:middle" />.
+            The button changes to a light background 
+            to indicate it is the active tool
+            <img src="../images/identify.png" 
+                style="background-color:white; vertical-align:middle"
+                alt="Identify tool - selected" />.
+            (If no Identify button is visible, then the Identify
+            function is not available in this application.)</li>
+        <li>Click on the feature you want to identify. An identify
+            icon <img src="../images/identify-map-icon.png"
+            style="vertical-align:middle;" alt="Map icon for identify" />
+            will be placed on the map at the location clicked. 
+            A callout label will also be placed near the 
+            location, with the name of the feature found, if any.<br />
+            <img src="images/identify_click.png" alt="Identify callout label" />
+            </li>
+        <li>To view details (attributes) for the feature, click the 
+            gray down-arrow at the right side of the callout label.
+            This expands the callout box to show the attributes
+            of the feature, as well as the layer name, and 
+            an option to add to results (see below).<br />
+            <img src="images/identify_detail.png"
+            alt="Identify detail" />.</li>
+        <li>Multiple features may be found at the location clicked.
+            To see the other features, hover the cursor over
+            the name of the feature in the identify callout.
+            The name will change to a drop-down list appearance:<br />
+            <img src="images/identify_mult.png" 
+            alt="Identify callout with multiple features" /><br />
+            Click the drop-down arrow to see the other feature names,
+            if any. Click the other feature to see its details
+            in the callout label box.
+            </li>
+        <li>If you want to keep this identify result for later
+            use, click the drop-down button on the right side of
+            the callout label, and choose <strong>
+            Add to Results</strong> (see graphic above). After a few
+            moments, an entry for the location should appear in
+            the <b>Results</b> section of the 
+            <a href="GettingStarted.htm#Console">Console</a>. 
+            The Location will 
+            display the coordinates of the location clicked.
+            See <a href="UsingResults.htm">Using Results</a> for more on
+            working with features in the Results window.</li>
+        <li>To close the identify callout box that appears on the map,
+            click the close button 
+            <span style="position:relative; width:23px; height:24px;">
+            <span style="clip:rect(5px 263px 29px 240px); position:absolute; 
+             top:-10px; left:-240px;">
+            <img src="images/identify_mult.png" alt="Identify close button"
+             style="" /></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            on its upper right. The identify callout will also 
+            be dismissed when the map zooms or pans.</li>
+    </ol>
+
+</body>
+</html>

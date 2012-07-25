@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="HelpFunctions.js" ></script>
+</head>
+<body>
+    <script>writeHeader();</script>
+    
+    <p class="sectionHead">Find</p>
+    
+    <h1>Using Results</h1>
+    
+    <p>The Results panel displays the output from using the Identify
+        tool, from a search using Find, or from other operations that
+        output information.</p>
+        
+    <h4>To open the Results window</h4>
+    
+    <ul>
+        <li>Results panel expands automatically after performing a
+            <a href="Searching.htm">search</a>
+            or after you choose the option to add features found
+            with the <a href="identify.htm">Identify</a> tool
+            to the Results panel.</li>
+        <li>You can also expand Results by clicking its down-arrow
+            in the <a href="GettingStarted.htm#Console">
+            Console</a>. If you open
+            Results before doing any search or Identify, the Results
+            panel will be blank.</li>
+        <li>You can collapse
+            the Results panel to its title bar by clicking the
+            collapse icon.</li>
+        <li>You can resize the height of Results 
+            by clicking and dragging the bottom of the
+            Results section.</li>
+        <li>If Results is re-opened, previous results will
+            still be visible, along with any new ones
+            just found.</li>
+    </ul>
+    
+    <h4>Navigating the Results window</h4>
+    
+    <table>
+    <tr>
+    
+    <td valign="top">
+    
+        <ul>
+            <li>After doing a search or adding results from Identify, an item will be added to Results.</li>
+            <li>If you do another search or add another result from Identify, the new results items
+                are added to the top of the list in Results. 
+                Previous items remain in the list.</li>
+            <li>To see information associated with a Location or Find result,
+                click the plus icon 
+                <img src="images/plus.gif" />
+                to the left of the item.</li>
+            <li>When you expand a results item, you will see
+                one or more <b>layer</b> names. Expand a layer to see
+                the features found within that layer at the location.
+                Features are listed using the value of 
+                the first string field in the attributes.</li>
+            <li>To see details for a <b>feature</b>, click its plus icon
+                <img src="images/plus.gif" />.
+                This displays attribute <b>field names and values</b>
+                for the feature.<br /><br /></li>
+            <li>Right-click on an item in Results for options:
+                <br />
+                <table border="0" cellpadding="5" cellspacing="1" class="tableMain">
+                    <tr class="oddRow"><td>Location</td><td>
+                        <img src="images/Results_location_context.gif" /></td>
+                        <td>Repeat the task<br /><hr />
+                            Remove this Location from Results</td></tr>
+                    <tr class="evenRow"><td>Layer in location</td><td>
+                        <img src="images/Results_layer_context.gif" /></td>
+                        <td>Zoom to checked features in Results<br /><hr />
+                            Remove the layer from Results</td></tr>
+                    <tr class="oddRow"><td>Feature in layer</td><td>
+                        <img src="images/Results_feature_context.gif" /></td>
+                        <td>Zoom to this feature<br /><hr />
+                            Center map on this feature<br /><hr />
+                            Remove this feature from Results</td></tr>
+                </table>
+            </li>
+        </ul>
+    
+    </td>
+    
+    <td valign="top">
+        <img src="images/Results_expanded.png" />
+    </td>
+    
+    </tr>
+    </table>
+    
+    <h4>
+        Interacting with results items and map graphics</h4>
+    <p>
+        You can hover over features in the Results, and the corresponding graphic on the
+        map will change color temporarily. This allows you to quickly determine the location
+        of features listed in the Results window.</p>
+    <p>
+        You can hover over a graphic for a feature on the map and the feature will temporarily
+        change color. A label, if available, will also be temporarily displayed for the
+        feature. You can then click on the graphic or the label and the label will expand
+        to display all available attributes for the feature. You may scroll through the
+        list of attributes. When you move the cursor away from the graphic, label or box,
+        these items will be hidden. This allows you to easily explore the features highlighted
+        on the map.</p>
+    <h4>
+        Selecting with the Results window</h4>
+    
+    <p>
+        Features may be selected (highlighted) on the map by clicking
+        the check-box next to feature
+        names:
+        <img align="absBottom" src="images/Results_checkbox.gif" />
+        . Most tasks select features when they are added to the Results. By default the highlighting
+        has a cyan (blue-green) outline or fill, but this may be set to a different color
+        by the creator of the map service. To unselect features uncheck them in the
+        Results window. You can unselect an entire layer or result set by unchecking its
+        check-box in the Results window.</p>
+        
+    <h4>Zooming to Features</h4>
+    <p>You can zoom to one or more features in the Results window. See
+        the table above for illustrations of the right-click menus.</p>
+    <ul>
+        <li>To zoom to a single feature, right-click the feature's name 
+            (next to the plus icon), and in the pop-up menu, choose <b>Zoom to</b>.</li>
+        <li>To zoom to multiple features in a layer, click in the checkboxes
+            of the features, then right-click on the Layer name, and choose
+            <b>Zoom To Selected Features</b>.</li>
+    </ul>
+
+</body>
+</html>

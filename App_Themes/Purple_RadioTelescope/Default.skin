@@ -1,0 +1,132 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+    
+<esriTasks:SearchAttributesTask runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" TitleBarForeColor="White"
+Visible="False"
+DockingContainerElementID="LeftPanelCellDiv" 
+ShowDockedContextMenu="True" 
+ShowDockButton="False" 
+Docked="False"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<esriEditor:EditorTask runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" TitleBarForeColor="White"
+Visible="False"
+DockingContainerElementID="LeftPanelCellDiv" 
+ShowDockedContextMenu="True" 
+ShowDockButton="False" 
+Docked="False"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<esriTasks:FindAddressTask runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" TitleBarForeColor="White"
+Visible="False"
+DockingContainerElementID="LeftPanelCellDiv" 
+ShowDockedContextMenu="True" 
+ShowDockButton="False" 
+Docked="False"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<esriTasks:FindPlaceTask runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" TitleBarForeColor="White"
+Visible="False"
+DockingContainerElementID="LeftPanelCellDiv" 
+ShowDockedContextMenu="True" 
+ShowDockButton="False" 
+Docked="False"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<esriTasks:GeoprocessingTask runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" TitleBarForeColor="White"
+Visible="False"
+DockingContainerElementID="LeftPanelCellDiv" 
+ShowDockedContextMenu="True" 
+ShowDockButton="False" 
+Docked="False"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<esriTasks:QueryAttributesTask runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" TitleBarForeColor="White"
+Visible="False"
+DockingContainerElementID="LeftPanelCellDiv" 
+ShowDockedContextMenu="True" 
+ShowDockButton="False" 
+Docked="False"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<esriTasks:PrintTask runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" TitleBarForeColor="White"
+Visible="False"
+DockingContainerElementID="LeftPanelCellDiv" 
+ShowDockedContextMenu="True" 
+ShowDockButton="False" 
+Docked="False"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<asp:Menu runat="server" >
+    <LevelSubMenuStyles>
+        <asp:SubMenuStyle BackColor="Transparent" ForeColor="White" BorderColor="Transparent" Font-Underline="False"  />
+    </LevelSubMenuStyles>  
+     <LevelMenuItemStyles>
+         <asp:MenuItemStyle Font-Underline="False" ForeColor="White" HorizontalPadding="4px" />
+     </LevelMenuItemStyles>
+     <DynamicHoverStyle BackColor="#b37aeb" ForeColor="Black" />
+     <DynamicMenuItemStyle ForeColor="White" HorizontalPadding="4px" BackColor="#b37aeb"/>
+     <StaticHoverStyle BackColor="Transparent" ForeColor="Black" />
+     <StaticMenuItemStyle ItemSpacing="4px" ForeColor="White"  />
+</asp:Menu>
+
+<asp:Menu runat="server" ForeColor="White" Font-Bold="true" SkinID="TaskBarSkin">
+    <StaticMenuItemStyle ItemSpacing="2px" />
+</asp:Menu>
+
+<esri:Toolbar runat="server" ToolbarItemHoverStyle-BackColor="#894ec2" />
+
+<esri:FloatingPanel runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="0" Font-Bold="True" TitleBarForeColor="White"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />
+
+<esri:Magnifier runat="server" BorderColor="#666666" BorderStyle="Outset" 
+BorderWidth="1px" Font-Names="Verdana" 
+Font-Size="8pt" ForeColor="Black"
+TitleBarColor="#4A3673" TitleBarHeight="24px" TitleBarSeparatorLine="True"
+Transparency="50" Font-Bold="True" TitleBarForeColor="White"
+TitleBarBackgroundImage="~/App_Themes/Purple_RadioTelescope/images/purple-gradient-24x1.gif" />

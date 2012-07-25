@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h1>How to customize Help for the Web Mapping Application</h1>
+    
+    <p>This page explains how to customize the Help for the Web Mapping Application.
+        This page is not intended for viewing by the end users of your application.
+        You may wish to move this file to a location not accessible to users, or delete it.</p>
+        
+    <p>The Help uses standard client-side Web tools: HTML, Cascading Style Sheets (CSS)
+        and a small amount of JavaScript. You should be familiar with
+        basic HTML and CSS to customize this Help. 
+        No server-side technology is used within this Help.
+        The Help is simple uncompiled Help, with a set of web pages,
+        images and related files.</p>
+        
+    <h4>Tips for customizing Help</h4>
+    <ul>
+    
+        <li>Use any editor to modify the Help. You can use a plain
+            text editor, such as Notepad, or an HTML editor, such as
+            Adobe Dreamweaver or Microsoft FrontPage.</li>
+        
+        <li>All Help files are contained within the <b>Help</b> folder.
+            The <b>images</b> sub-folder contains some of the images used in the Help.
+            Other images are referenced from the parent Web Mapping Application, or
+            from a web resource location. If you plan to deploy this Help separately
+            from your Web Mapping Application, see the discussion below on images.</li>
+            
+        <li>The <strong>default.htm</strong> page contains links to individual help
+            pages. If you add a new page to your Help, 
+            add a link here so your users can find it.
+            If you delete a help file, remove its link as well.
+            </li>
+            
+        <li>Many properties for display of elements are set up as styles,
+            using Cascading Style Sheets (CSS). Most styles are contained
+            in a single file, <strong>StyleSheet.css</strong>.
+            This CSS file is used
+            in each Help file (see the <strong>&lt;link&gt;</strong> near the top of each file).
+            </li>
+            
+        <li>If you change a style in the <strong>StyleSheet.css</strong>, it will take
+            effect in every Help page. For example, to change the
+            background color of every help file, change the <strong>
+            background-color</strong> property in the <strong>body</strong>
+            style, which is
+            at the top of the <strong>StyleSheet.css</strong> file.
+            </li>
+            
+         <li>For tips on using styles and HTML, see a book or website
+            on the topic, such as <a href="http://www.w3schools.com"
+            target="_blank">W3 Schools</a>.</li>
+            
+         <li>A header is placed at the top of Help pages, which
+            shows "Back" and "Help topics" links. This header
+            is inserted using JavaScript. The JavaScript is stored
+            in the 
+             <strong>HelpFunctions.js</strong> file. You can modify the
+            links by modifying the 
+             <strong>writeHeader()</strong> function in this file.</li>
+    
+    </ul>
+    
+    <h4>Image issues when deploying Help separately from the Web Mapping Application</h4>
+    
+        <p>Some images are used from the images folder in the Web Mapping Application,
+            in the parent folder of Help. These images may not
+            display correctly if the Help is moved to a folder outside the Web
+            Mapping Application.</p>
+            
+        <p>If you must locate the Help separately from the Web Mapping Application,
+            you will need to add these images to your customized Help website. </p>
+            
+        <ol>
+        
+            <li>Copy images referenced from the images folder of the parent Web Mapping Application
+            into your Help website. You can find these images by searching
+            for "../images/" in the files of the Help website. They include identify.png, backward.png, and measure-line.png, and total about 18 references in various
+            page of the Help. Copy each image from the parent images directory
+            into the images subdirectory inside Help.</li>
+            
+            <li>Then update the URLs for each image to point to your local copy of the image.
+            Find each reference to "../images/", and change them to "images/".</li>
+            
+            <li>After copying the images and updating the URLs, test each Help page to ensure
+            images appear.</li>
+        
+        </ol>
+                      
+</body>
+</html>

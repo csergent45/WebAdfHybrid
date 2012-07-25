@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="HelpFunctions.js" ></script>
+</head>
+<body>
+    <script>writeHeader();</script>
+    
+    <p class="sectionHead">Explore the map</p>
+    
+    <h1>Using the Toolbar</h1>
+    
+    <p>The toolbar allows you to interact with the map by clicking on the map with a
+        tool. For example, if you click in the toolbar on the Zoom In tool, then
+        click on the map, the map will zoom in around where you click.</p>
+        
+    <p>You can also interact with the map using the <a href="UsingTheKeyboard.htm">keyboard</a>.
+        Also see <a href="UsingTheMouse.htm">Using the mouse</a> for tips on
+        using the mouse to interact with the map.</p>
+        
+    <h4>To use a tool</h4>
+    
+    <p><i>Note: Some tools do an action immediately.</i> These include the 
+        Full-extent, Back-extent, Next-extent, and 
+        <a href="OverviewAndMagnifier.htm#Magnifier">Magnifier</a> tools.</p>
+    
+    <ul>
+        <li>In the toolbar, click on the tool you want to use.</li>
+        <li>Move the cursor over the map. The cursor may change
+            to indicate the tool you are using.</li>
+        <li>Click on the map with the left mouse button. 
+            <i>Note:</i> Some tools work by depressing the mouse
+            and dragging the cursor to draw a rectangle, line or polygon,
+            then releasing the mouse button.</li>
+        <li>The results depend on the tool. The map appearance may
+            change, such as zooming in or out. Or the results may
+            appear in the Console's Results section, such as
+            with the Identify tool.</li>
+    </ul>
+        
+    <h4>Tools</h4>
+    
+    <p>Tools in your website depend on the purpose and use of the application.
+        Some or all of these may be available:</p>
+        
+    <table border="0" cellpadding="5" cellspacing="0" class="tableMain">
+        <tr class="tableHeader">
+            <th>Name
+            </th>
+            <th>Icon
+            </th>
+            <th>Description
+            </th>
+        </tr>
+        <tr class="evenRow">
+            <td align="center">Zoom in
+            </td>
+            <td align="center">
+                <img src="images/esriZoomIn.png" alt="Zoom in tool" />
+            </td>
+            <td><b>Click and drag a rectangle</b>:
+             Click and hold the left mouse button down on the map
+             at one corner of the rectangle to zoom in to. Drag
+             the mouse to the other corner of the rectangle, and release
+             the mouse button.
+             The map will zoom in to the area of the rectangle. </td>
+        </tr>
+        <tr class="oddRow">
+            <td align="center">Zoom out</td>
+            <td align="center">
+                <img src="images/esriZoomOut.png" alt="Zoom out tool" /></td>
+            <td><b>Click and drag a rectangle</b>:
+                the map will zoom out so that the current
+                map area will fit into the rectangle drawn.
+                The smaller the rectangle you draw, the more
+                the map will zoom out.</td>
+        </tr>
+        <tr class="evenRow">
+            <td align="center">Pan (recenter)</td>
+            <td align="center">
+                <img src="images/esriPan.png" alt="Pan tool" /></td>
+            <td><b>Click and drag the map</b>:
+                Click and hold the left mouse button on the map,
+                and drag the map. The map will be recentered,
+                with the location dragged at the location you
+                dropped it.</td>
+        </tr>
+        <tr class="oddRow">
+            <td align="center">Full extent</td>
+            <td align="center">
+                <img src="images/esriZoomFullExtent.png" alt="Full map extent" /></td>
+            <td><b>Full extent</b>:
+                Immediately zooms the map out to the
+                area of all features and layers. The active
+                tool does not change.</td>
+        </tr>
+        <tr class="evenRow">
+            <td align="center">Previous extent</td>
+            <td align="center">
+                <img src="../images/backward.png" alt="Zoom to previous extent" /></td>
+            <td><b>Previous extent</b>:
+                The map returns to the area displayed previously. Similar
+                to the browser's Back button, but specifically for the map. Up 
+                to ten previous extents are stored when the map is zoomed or panned. If
+                the button is disabled, you are at the original extent in
+                the extent history.</td>
+        </tr>
+        <tr class="oddRow">
+            <td align="center">Forward extent</td>
+            <td align="center">
+                <img src="../images/forward.png" alt="Zoom to next extent" /></td>
+            <td><b>Forward extent</b>:
+                The map displays the next extent in the list of stored map
+                extents. This is only available after the Previous Extent
+                button has been clicked. Up to ten extents are stored in the
+                extent history. If the button is disabled, you are at the
+                latest extent in the extent history.</td>
+        </tr>
+        <tr class="evenRow">
+            <td align="center">Identify</td>
+            <td align="center">
+                <img src="../images/identify.png" alt="Identify tool" /></td>
+            <td><b>Click to identify</b>:
+                Click with the left mouse button on the map.
+                A small icon is added to the map
+                <img src="../images/identify-map-icon.png" alt="identify icon"
+                    height="27" width="25" style="vertical-align:middle;" />
+                and a callout box displays the name of a feature at the location. See
+                <a href= "Identify.htm">Identify features on the map</a>
+                for how to use the identification information.</td>
+        </tr>
+        <tr class="oddRow">
+            <td align="center">Measure</td>
+            <td align="center">
+                <img src="../images/measure.png" alt="Measure tool" /></td>
+            <td><b>Measure distance or area</b>:
+                See <a href="Measuring.htm">Measuring</a> for usage.</td>
+        </tr>
+        <tr class="evenRow">
+            <td align="center">Magnifier</td>
+            <td align="center">
+                <img src="../images/show-magnify.png" alt="Magnifier tool" /></td>
+            <td><b>Magnify a section of the map</b>:
+                See <a href="OverviewAndMagnifier.htm#Magnifier">Magnifier</a> for usage.</td>
+        </tr>
+        <tr class="oddRow">
+            <td align="center">Overview map</td>
+            <td align="center">
+                <img src="../images/show-overview-map.png" alt="Toggle overview map" /></td>
+            <td><b>Toggle overview map on/off</b>:
+                Turns the overview map on or off. The overview map displays
+                the main map's extent as a red rectangle within a map that
+                covers a larger extent. For more details, see the
+                <a href="overviewAndMagnifier.htm">Overview Map</a> page.</td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>

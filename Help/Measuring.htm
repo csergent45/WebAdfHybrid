@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="HelpFunctions.js" ></script>
+</head>
+<body>
+
+    <script>writeHeader();</script>
+    
+    <p class="sectionHead">Find</p>
+    
+    <h1>Measure distance and area</h1>
+    
+    <p>You can use the Measure tool to measure distances and areas. 
+    To use one of these tools, open the Measure dialog and then use
+    the appropriate tool.</p>
+    
+    <ul>
+        <li><a href="#MeasureDialog">To open the Measure dialog</a></li>
+        <li><a href="#MeasureLine">To measure a line</a></li>
+        <li><a href="#MeasurePolygon">To measure a polygon</a></li>
+        <li><a href="#FindCoordinates">To find X,Y coordinates</a></li>
+    </ul>
+    
+    <h4><a name="MeasureDialog"></a>
+        To open the Measure dialog</h4>
+    
+    <ol>
+    
+        <li>In the <a href="ToolReference.htm">Toolbar</a>,
+            click the <b>Measure</b> icon
+            <img src="../images/measure.png" align="absmiddle" />. 
+            If the Measure icon is not visible, then the Measure
+            tool is not available for this application.</li>
+            
+        <li>This opens the
+            Measure element dialog.<br /><br />
+            <img src="images/MeasureDialog.gif" /><br /><br />
+            
+            See the instructions below depending on whether you want
+            to measure a line or to measure area. You can also use the point
+            option to find the x,y coordinates of a location on the map.
+        </li>
+        
+        <li>After measuring, you can close the Measure dialog
+            by clicking on its Close icon
+            in the upper right, or by clicking any other tool in the
+            Tools element (Zoom in, Zoom out, Pan, etc.)</li>
+            
+    </ol>
+    
+    <h4><a name="MeasureLine"></a>
+        To measure a line</h4>
+    
+    <ol>
+            
+        <li>In the Measure dialog, click the Line icon 
+            <img src="../images/measure-line.png" />. 
+            The Line icon is outlined to show it is the active type.
+            </li>
+               
+        <li>Move the cursor to the first point of the line you want to
+            measure, and click the left mouse button. As you move the
+            mouse from this location, you will see the line stretching
+            to the current position. The measure dialog will also begin
+            to display distance.
+        </li>
+        
+        <li>Move the cursor to the second point of the line. If you only
+            want to measure one straight-line segment, double-click at
+            this location. Otherwise click once with the left mouse button.
+        </li>
+        
+        <li>If measuring a line with multiple segments (polyline),
+            continue clicking at vertices to add segments. The length
+            of the previous segment is shown in the <b>Segment</b>
+            display in the Measure dialog. The <b>Total Length</b>
+            displays the sum of segments added so far.<br />
+            <img src="images/MeasureLine.gif" />
+            </li>
+            
+         <li>At any point during the measuring, you can change 
+            the units for measuring distance by using the drop-down list
+            in the measure dialog. 
+            You can also change units after completing the measurement.
+            </li>
+            
+        <li>At the last vertex, double-click to end the line.
+            The <b>Total Length</b> displays the length of the
+            line, including all segments if multiple ones were drawn.
+            You can change the units drop-down list to see the same line
+            expressed with different units.</li>
+            
+        <li>To draw a new line, simply click on the map to start
+            the new line. This erases the previous line.</li>
+            
+        <li>To erase the line from the map, click any of the measure type
+            icons in the Measure dialog. If you click
+            any other tool in the Tools element, this will close the
+            Measure dialog, and any line or polygon will also be erased.</li>
+    
+    </ol>
+    
+    <h4><a name="MeasurePolygon"></a>
+        To measure area</h4>
+    
+    <ol>
+    
+        <li>In the Measure dialog,  click the Polygon icon
+            <img src="../images/measure-poly.png" />.
+            The Polygon icon is outlined to show it is the
+            active type, and the dialog changes to show information
+            on measuring polygons.
+            </li>
+            
+        <li>Set the units for measuring distance. 
+            For polygons, the measured area displays in the Area Units,
+            and the perimeter displays in the Distance Units.</li>
+            
+        <li>Click the left mouse button at the first point in
+            the polygon. As you move the
+            mouse from this location, you will see the line stretching
+            to the current position.</li>
+            
+        <li>Click the second point of the polygon. The first segment
+            draws, and the polygon now stretches to the current position
+            from the last point as well as to the initial point. When
+            you click the third point, the measure dialog displays the
+            perimeter and area of the polygon based on the vertices added. The total is
+            updated as you add more vertices.<br />
+            <img src="images/MeasurePolygon.gif" />
+            </li>
+            
+        <li>Continue adding points (vertices) of the polygon. New
+            vertices add segments connecting to the previous vertex.
+            </li>
+            
+        <li>At the last vertex in the polygon, double-click the mouse.
+            You do not need to click at the original point again.
+            Read the Area and Perimeter from the Measure dialog.
+            You can change the Distance Units to see the same polygon
+            expressed with different units.</li>
+            
+        <li>To draw a new polygon, simply click on the map to start
+            the new polygon. This erases the previous polygon.</li>
+            
+        <li>To erase the polygon from the map, click any of the measure type 
+            icons in the Measure dialog. If you click
+            any other tool in the Tools element, this will close the
+            Measure dialog, and any line or polygon will also be erased.</li>
+    
+    </ol>
+    
+    <h4><a name="FindCoordinates"></a>
+        To find X,Y coordinates</h4>
+        
+    <p>The Measure dialog also allows finding the X,Y coordinates at
+        a point where you click on the map.</p>
+        
+    <ol>
+        <li>In the Measure dialog, click on the point symbol
+            <img src="../images/measure-point.png" />.</li>
+        
+        <li>Click on the map. The coordinates at the location you clicked
+            will be displayed in the Measure dialog.<br />
+            <img src="images/MeasurePoint.gif" />
+            </li>
+    </ol>
+    
+    <p>The units and projection (spatial reference) of the coordinates 
+        will be based on the map used in the web application.</p>
+
+</body>
+</html>

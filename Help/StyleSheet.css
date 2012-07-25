@@ -1,0 +1,79 @@
+﻿body 
+{
+    margin:15px;
+    font-family:Verdana, Tahoma, helvetica, Sans-Serif;
+    background-color:#eeeeff;
+    font-size:75%;
+}
+
+h1
+{
+    color:White;
+    background-color:steelblue;
+    padding:14px;
+    font-size:150%;
+    font-family:Georgia,Times New Roman,serif;
+}
+
+h4
+{
+    border-bottom:solid thin steelblue;
+    margin-top:30px;
+}
+
+h5
+{
+    font-size:100%;
+}
+
+.sectionHead
+{
+    font-weight:bold;
+}
+
+.tableMain
+{
+    background-color:steelblue;
+    border:steelblue thin solid;
+}
+
+.tableHeader
+{
+     background-color:steelblue;
+     color:White;
+}
+
+.oddRow 
+{
+    background-color:#ddddff;
+}
+
+.evenRow
+{
+    background-color:White;
+}
+
+.key
+{
+    border: 1px black solid;
+    padding: 4px;
+    background-color: LightBlue;
+    font-weight:bold;
+    font-family:System;
+    font-size:large;
+}
+
+a
+{
+    text-decoration: none;
+    color: steelblue;
+}
+a:hover 
+{
+    text-decoration:underline;
+    color: steelblue;
+}
+a:visited 
+{
+    color:SteelBlue; 
+}

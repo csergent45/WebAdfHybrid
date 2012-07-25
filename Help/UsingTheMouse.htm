@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web Mapping Application Help</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="HelpFunctions.js" ></script>
+</head>
+<body>
+    <script>writeHeader();</script>
+    
+    <p class="sectionHead">
+        Explore the map</p>
+    <h1>Using the mouse</h1>
+    
+    <p>You can use a mouse or pointing device to move around and explore the map.
+        </p>
+    
+    <table border="0" cellpadding="5" cellspacing="1" class="tableMain">
+        <tr class="tableHeader">
+            <th>Map action
+            </th>
+            <th>Use this tool...
+            </th>
+            <th>...and do this
+            </th>
+        </tr>
+        <tr class="evenRow">
+            <th rowspan="2">Re-center the map
+            </th>
+            <td align="center">Navigation element<br />
+                <img src="../images/directional_arrows_N.gif" alt="North arrow navigator"
+                  style="background-color: transparent; background-image: none;" />
+                <br />(image may vary)
+            </td>
+            <td>
+                Located in the upper left corner of the map display (if available).
+                Click and hold on the Navigation image in the direction
+                you want to re-center the map. You can click on any
+                spot on the Navigation image to fine-tune the movement.
+            </td>
+        </tr>
+        <tr class="evenRow">
+            <!-- (2nd row for pan methods) -->
+            <td align="center">Pan tool <br />
+                <img src="images/esriPan.png" alt="Pan tool" />
+            </td>
+            <td>Click on the Pan tool in the 
+                <a href="ToolReference.htm">Toolbar</a>, then
+                click and drag the map to move it.
+            </td>
+        </tr>
+        <tr class="oddRow">
+            <th rowspan="4">Zoom in
+            </th>
+            <td align="center">Mouse wheel<br />
+                <img src="images/mousewheel.gif" alt="Mouse wheel" />
+            </td>
+            <td>Scroll the mouse wheel forward or up to zoom in. Each wheel click
+                will zoom the map by about 50 percent in width and height.
+            </td>
+        </tr>
+        <tr class="oddRow">
+            <!-- (2nd row for zoomin methods) -->
+            <td align="center">Shift+Left mouse<br />
+                <img src="images/leftmouse.gif" alt="Left-mouse button" />
+            </td>
+            <td>Hold the Shift key down, then hold the left mouse
+                button down and drag to draw a rectangle. 
+                The map will zoom in to the area of the rectangle.
+            </td>
+        </tr>
+        <tr class="oddRow">
+            <!-- 3rd row for zoom in methods -->
+            <td align="center">Zoom in tool<br />
+                <img src="images/esriZoomIn.png" alt="Zoom in tool" />
+            </td>
+            <td>Click on the zoom-in tool in the
+                <a href="ToolReference.htm">Toolbar</a>, then
+                <ul>
+                    <li>Click once on the map: the map will
+                        zoom in and recenter the map where you click; 
+                        <b>OR</b></li>
+                    <li>Click and drag to draw a rectangle on the map:
+                        the map will zoom in to the area of the rectangle.</li>
+                </ul> 
+            </td>
+        </tr>
+        <tr class="oddRow">
+            <!-- (4th row for zoomin methods) -->
+            <td align="center">Zoom-level<br />
+                <img src="images/zoomlevel.png" alt="Zoom-level control" />
+            </td>
+            <td>Click the plus button on the zoom level control to
+                zoom in. Some maps may have tics between the plus and
+                minus buttons, which may be clicked to zoom to a
+                specific scale.
+            </td>
+        </tr>
+        <tr class="evenRow">
+            <th rowspan="4">Zoom out</th>
+            <td align="center">Mouse wheel<br />
+                <img src="images/mousewheel.gif" alt="Mouse wheel" />
+            </td>
+            <td>Scroll the mouse wheel backward or down to zoom out. Each wheel click
+                will zoom the map by about 50 percent in width and height.
+            </td>
+        </tr>
+        <tr class="oddRow">
+            <!-- (2nd row for zoomin methods) -->
+            <td align="center">Ctrl+Left mouse<br />
+                <img src="images/leftmouse.gif" alt="Left-mouse button" />
+            </td>
+            <td>Hold the Ctrl key down, then click the left mouse button
+                to zoom out. You can also hold the left mouse
+                button down and drag to draw a rectangle. 
+                The map will zoom out so that the current map extent fits
+                into the rectangle drawn. The smaller the rectangle, the more
+                the map zooms out.
+            </td>
+        </tr>
+        <tr class="evenRow">
+            <!-- (3rd row for zoomout methods) -->
+            <td align="center">Zoom out tool<br />
+                <img src="images/esriZoomOut.png" alt="Zoom out tool" /></td>
+            <td>Click on the zoom-out tool in the
+                <a href="ToolReference.htm">Toolbar</a>, then
+                <ul>
+                    <li>Click once on the map: the map will zoom out
+                         and recenter the map where you click;
+                        <b>OR</b></li>
+                    <li>Click and drag to draw a rectangle on the map: 
+                        the map will zoom out so that the current
+                        map area will fit into the rectangle drawn.
+                        The smaller the rectangle you draw, the more
+                        the map will zoom out.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="evenRow">
+            <!-- (4th row for zoomout methods) -->
+            <td align="center">Zoom-level<br />
+                <img src="images/zoomlevel.png" alt="Zoom-level control" />
+            </td>
+            <td>Click the minus button on the zoom level control to zoom out. Some maps may have tics between the plus and
+                minus buttons, which may be clicked to zoom to a
+                specific scale.
+            </td>
+        </tr>
+        <tr class="oddRow">
+            <th>Zoom out to full map</th>
+            <td align="center">Zoom full extent<br />
+                <img src="images/esriZoomFullExtent.png" alt="Zoom full extent" /></td>
+            <td>Click on the full extent image in 
+                the <a href="ToolReference.htm">Toolbar</a>.
+                The map will zoom all the way out to
+                the full map extent.</td>
+        </tr>
+    </table>
+
+</body>
+</html>
